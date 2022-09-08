@@ -17,7 +17,11 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          It's a work in progress. But it'll be here soon!!
+        A personal portfolio site built with Next.js, distributed by CloudFront, and hosted on AWS S3 to showcase my professional accomplishments - currently a work in progress!
+        </p>
+
+        <p className={styles.description}>
+          <a href='https://github.com/arunkulkarni95/personal-site' target="_blank" rel="noopener noreferrer">Source (GitHub)</a>
         </p>
 
         <div className={styles.grid}>

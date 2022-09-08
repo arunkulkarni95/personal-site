@@ -2,18 +2,20 @@
 /* eslint-disable */
 //  This file was automatically generated and should not be edited.
 
-export type CreateTodoInput = {
+export type CreateProjectInput = {
   id?: string | null,
   name: string,
   description?: string | null,
+  url?: string | null,
 };
 
-export type ModelTodoConditionInput = {
+export type ModelProjectConditionInput = {
   name?: ModelStringInput | null,
   description?: ModelStringInput | null,
-  and?: Array< ModelTodoConditionInput | null > | null,
-  or?: Array< ModelTodoConditionInput | null > | null,
-  not?: ModelTodoConditionInput | null,
+  url?: ModelStringInput | null,
+  and?: Array< ModelProjectConditionInput | null > | null,
+  or?: Array< ModelProjectConditionInput | null > | null,
+  not?: ModelProjectConditionInput | null,
 };
 
 export type ModelStringInput = {
@@ -56,33 +58,36 @@ export type ModelSizeInput = {
   between?: Array< number | null > | null,
 };
 
-export type Todo = {
-  __typename: "Todo",
+export type Project = {
+  __typename: "Project",
   id: string,
   name: string,
   description?: string | null,
+  url?: string | null,
   createdAt: string,
   updatedAt: string,
   owner?: string | null,
 };
 
-export type UpdateTodoInput = {
+export type UpdateProjectInput = {
   id: string,
   name?: string | null,
   description?: string | null,
+  url?: string | null,
 };
 
-export type DeleteTodoInput = {
+export type DeleteProjectInput = {
   id: string,
 };
 
-export type ModelTodoFilterInput = {
+export type ModelProjectFilterInput = {
   id?: ModelIDInput | null,
   name?: ModelStringInput | null,
   description?: ModelStringInput | null,
-  and?: Array< ModelTodoFilterInput | null > | null,
-  or?: Array< ModelTodoFilterInput | null > | null,
-  not?: ModelTodoFilterInput | null,
+  url?: ModelStringInput | null,
+  and?: Array< ModelProjectFilterInput | null > | null,
+  or?: Array< ModelProjectFilterInput | null > | null,
+  not?: ModelProjectFilterInput | null,
 };
 
 export type ModelIDInput = {
@@ -101,93 +106,98 @@ export type ModelIDInput = {
   size?: ModelSizeInput | null,
 };
 
-export type ModelTodoConnection = {
-  __typename: "ModelTodoConnection",
-  items:  Array<Todo | null >,
+export type ModelProjectConnection = {
+  __typename: "ModelProjectConnection",
+  items:  Array<Project | null >,
   nextToken?: string | null,
 };
 
-export type CreateTodoMutationVariables = {
-  input: CreateTodoInput,
-  condition?: ModelTodoConditionInput | null,
+export type CreateProjectMutationVariables = {
+  input: CreateProjectInput,
+  condition?: ModelProjectConditionInput | null,
 };
 
-export type CreateTodoMutation = {
-  createTodo?:  {
-    __typename: "Todo",
+export type CreateProjectMutation = {
+  createProject?:  {
+    __typename: "Project",
     id: string,
     name: string,
     description?: string | null,
+    url?: string | null,
     createdAt: string,
     updatedAt: string,
     owner?: string | null,
   } | null,
 };
 
-export type UpdateTodoMutationVariables = {
-  input: UpdateTodoInput,
-  condition?: ModelTodoConditionInput | null,
+export type UpdateProjectMutationVariables = {
+  input: UpdateProjectInput,
+  condition?: ModelProjectConditionInput | null,
 };
 
-export type UpdateTodoMutation = {
-  updateTodo?:  {
-    __typename: "Todo",
+export type UpdateProjectMutation = {
+  updateProject?:  {
+    __typename: "Project",
     id: string,
     name: string,
     description?: string | null,
+    url?: string | null,
     createdAt: string,
     updatedAt: string,
     owner?: string | null,
   } | null,
 };
 
-export type DeleteTodoMutationVariables = {
-  input: DeleteTodoInput,
-  condition?: ModelTodoConditionInput | null,
+export type DeleteProjectMutationVariables = {
+  input: DeleteProjectInput,
+  condition?: ModelProjectConditionInput | null,
 };
 
-export type DeleteTodoMutation = {
-  deleteTodo?:  {
-    __typename: "Todo",
+export type DeleteProjectMutation = {
+  deleteProject?:  {
+    __typename: "Project",
     id: string,
     name: string,
     description?: string | null,
+    url?: string | null,
     createdAt: string,
     updatedAt: string,
     owner?: string | null,
   } | null,
 };
 
-export type GetTodoQueryVariables = {
+export type GetProjectQueryVariables = {
   id: string,
 };
 
-export type GetTodoQuery = {
-  getTodo?:  {
-    __typename: "Todo",
+export type GetProjectQuery = {
+  getProject?:  {
+    __typename: "Project",
     id: string,
     name: string,
     description?: string | null,
+    url?: string | null,
     createdAt: string,
     updatedAt: string,
     owner?: string | null,
   } | null,
 };
 
-export type ListTodosQueryVariables = {
-  filter?: ModelTodoFilterInput | null,
+export type ListProjectsQueryVariables = {
+  filter?: ModelProjectFilterInput | null,
   limit?: number | null,
   nextToken?: string | null,
 };
 
-export type ListTodosQuery = {
-  listTodos?:  {
-    __typename: "ModelTodoConnection",
+export type ListProjectsQuery = {
+  listProjects?:  {
+    __typename: "ModelProjectConnection",
     items:  Array< {
-      __typename: "Todo",
+      __typename: "Project",
       id: string,
       name: string,
       description?: string | null,
+      url?: string | null,
       createdAt: string,
       updatedAt: string,
       owner?: string | null,
@@ -196,48 +206,51 @@ export type ListTodosQuery = {
   } | null,
 };
 
-export type OnCreateTodoSubscriptionVariables = {
+export type OnCreateProjectSubscriptionVariables = {
   owner?: string | null,
 };
 
-export type OnCreateTodoSubscription = {
-  onCreateTodo?:  {
-    __typename: "Todo",
+export type OnCreateProjectSubscription = {
+  onCreateProject?:  {
+    __typename: "Project",
     id: string,
     name: string,
     description?: string | null,
+    url?: string | null,
     createdAt: string,
     updatedAt: string,
     owner?: string | null,
   } | null,
 };
 
-export type OnUpdateTodoSubscriptionVariables = {
+export type OnUpdateProjectSubscriptionVariables = {
   owner?: string | null,
 };
 
-export type OnUpdateTodoSubscription = {
-  onUpdateTodo?:  {
-    __typename: "Todo",
+export type OnUpdateProjectSubscription = {
+  onUpdateProject?:  {
+    __typename: "Project",
     id: string,
     name: string,
     description?: string | null,
+    url?: string | null,
     createdAt: string,
     updatedAt: string,
     owner?: string | null,
   } | null,
 };
 
-export type OnDeleteTodoSubscriptionVariables = {
+export type OnDeleteProjectSubscriptionVariables = {
   owner?: string | null,
 };
 
-export type OnDeleteTodoSubscription = {
-  onDeleteTodo?:  {
-    __typename: "Todo",
+export type OnDeleteProjectSubscription = {
+  onDeleteProject?:  {
+    __typename: "Project",
     id: string,
     name: string,
     description?: string | null,
+    url?: string | null,
     createdAt: string,
     updatedAt: string,
     owner?: string | null,
