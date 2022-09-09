@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -12,16 +12,22 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to Arun's Site!
-        </h1>
+        <h1 className={styles.title}>Welcome to Arun's Site!</h1>
 
         <p className={styles.description}>
-        A personal portfolio site built with Next.js, distributed by CloudFront, and hosted on AWS S3 to showcase my professional accomplishments - currently a work in progress!
+          A personal portfolio site built with Next.js, distributed by
+          CloudFront, and hosted on AWS S3 to showcase my professional
+          accomplishments - currently a work in progress!
         </p>
 
         <p className={styles.description}>
-          <a href='https://github.com/arunkulkarni95/personal-site' target="_blank" rel="noopener noreferrer">Source (GitHub)</a>
+          <a
+            href="https://github.com/arunkulkarni95/personal-site"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Source (GitHub)
+          </a>
         </p>
 
         <div className={styles.grid}>
@@ -54,21 +60,26 @@ export default function Home() {
           </a>
         </div>
       </main>
-
       <footer className={styles.footer}>
-        <div>COPYRIGHT &#169; {new Date().getFullYear()} Arun Kulkarni
+        <div>
+          COPYRIGHT &#169; {new Date().getFullYear()} Arun Kulkarni
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Powered by{' '}
+            Powered by{" "}
             <span className={styles.logo}>
-              <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+              <Image
+                src="/vercel.svg"
+                alt="Vercel Logo"
+                width={72}
+                height={16}
+              />
             </span>
           </a>
         </div>
       </footer>
     </div>
-  )
+  );
 }
