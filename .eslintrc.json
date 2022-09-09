@@ -23,12 +23,6 @@
     "@typescript-eslint"
   ],
   "rules": {
-    "max-len": [
-      "error",
-      {
-        "code": 130
-      }
-    ],
     "react/jsx-filename-extension": [
       1,
       {
@@ -39,14 +33,63 @@
       }
     ],
     "react/no-unescaped-entities": "off",
-    "prettier/prettier": "error",
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-props-no-spreading": "off",
-    "react/forbid-prop-types": "off",
-    "react/require-default-props": [
+    "@typescript-eslint/comma-dangle": [
+      "error",
+      "never"
+    ],
+    "@typescript-eslint/no-extra-parens": "error",
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "comma-dangle": "off",
+    "curly": [
+      "error",
+      "multi-or-nest",
+      "consistent"
+    ],
+    "implicit-arrow-linebreak": "off",
+    "import/no-named-as-default": "off",
+    "import/order": [
       "error",
       {
-        "ignoreFunctionalComponents": true
+        "newlines-between": "never",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "linebreak-style": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 130
+      }
+    ],
+    "no-nested-ternary": "off",
+    "no-plusplus": "off",
+    "no-return-assign": [
+      "error",
+      "except-parens"
+    ],
+    "nonblock-statement-body-position": [
+      "error",
+      "below"
+    ],
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
+    "no-restricted-syntax": [
+      "error",
+      "BinaryExpression[operator=\"of\"]"
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
       }
     ]
   }
