@@ -1,11 +1,15 @@
-
 {
   "env": {
     "browser": true,
     "es2021": true,
     "node": true
   },
-  "extends": ["plugin:react/recommended", "plugin:@next/next/recommended", "airbnb", "prettier"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@next/next/recommended",
+    "airbnb",
+    "prettier"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -13,10 +17,27 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier"],
+  "plugins": [
+    "react",
+    "prettier",
+    "@typescript-eslint"
+  ],
   "rules": {
-    "max-len": ["error", { "code": 130 }],
-    "react/jsx-filename-extension": [1, { "extensions": [".tsx",".jsx"] }],
+    "max-len": [
+      "error",
+      {
+        "code": 130
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".tsx",
+          ".jsx"
+        ]
+      }
+    ],
     "react/no-unescaped-entities": "off",
     "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",

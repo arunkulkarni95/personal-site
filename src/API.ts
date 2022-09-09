@@ -13,8 +13,8 @@ export type ModelProjectConditionInput = {
   name?: ModelStringInput | null,
   description?: ModelStringInput | null,
   url?: ModelStringInput | null,
-  and?: Array< ModelProjectConditionInput | null > | null,
-  or?: Array< ModelProjectConditionInput | null > | null,
+  and?: Array<ModelProjectConditionInput | null> | null,
+  or?: Array<ModelProjectConditionInput | null> | null,
   not?: ModelProjectConditionInput | null,
 };
 
@@ -27,7 +27,7 @@ export type ModelStringInput = {
   gt?: string | null,
   contains?: string | null,
   notContains?: string | null,
-  between?: Array< string | null > | null,
+  between?: Array<string | null> | null,
   beginsWith?: string | null,
   attributeExists?: boolean | null,
   attributeType?: ModelAttributeTypes | null,
@@ -55,7 +55,7 @@ export type ModelSizeInput = {
   lt?: number | null,
   ge?: number | null,
   gt?: number | null,
-  between?: Array< number | null > | null,
+  between?: Array<number | null> | null,
 };
 
 export type Project = {
@@ -85,8 +85,8 @@ export type ModelProjectFilterInput = {
   name?: ModelStringInput | null,
   description?: ModelStringInput | null,
   url?: ModelStringInput | null,
-  and?: Array< ModelProjectFilterInput | null > | null,
-  or?: Array< ModelProjectFilterInput | null > | null,
+  and?: Array<ModelProjectFilterInput | null> | null,
+  or?: Array<ModelProjectFilterInput | null> | null,
   not?: ModelProjectFilterInput | null,
 };
 
@@ -99,7 +99,7 @@ export type ModelIDInput = {
   gt?: string | null,
   contains?: string | null,
   notContains?: string | null,
-  between?: Array< string | null > | null,
+  between?: Array<string | null> | null,
   beginsWith?: string | null,
   attributeExists?: boolean | null,
   attributeType?: ModelAttributeTypes | null,
@@ -108,7 +108,7 @@ export type ModelIDInput = {
 
 export type ModelProjectConnection = {
   __typename: "ModelProjectConnection",
-  items:  Array<Project | null >,
+  items: Array<Project | null>,
   nextToken?: string | null,
 };
 
@@ -118,7 +118,7 @@ export type CreateProjectMutationVariables = {
 };
 
 export type CreateProjectMutation = {
-  createProject?:  {
+  createProject?: {
     __typename: "Project",
     id: string,
     name: string,
@@ -136,7 +136,7 @@ export type UpdateProjectMutationVariables = {
 };
 
 export type UpdateProjectMutation = {
-  updateProject?:  {
+  updateProject?: {
     __typename: "Project",
     id: string,
     name: string,
@@ -154,7 +154,7 @@ export type DeleteProjectMutationVariables = {
 };
 
 export type DeleteProjectMutation = {
-  deleteProject?:  {
+  deleteProject?: {
     __typename: "Project",
     id: string,
     name: string,
@@ -171,7 +171,7 @@ export type GetProjectQueryVariables = {
 };
 
 export type GetProjectQuery = {
-  getProject?:  {
+  getProject?: {
     __typename: "Project",
     id: string,
     name: string,
@@ -190,9 +190,9 @@ export type ListProjectsQueryVariables = {
 };
 
 export type ListProjectsQuery = {
-  listProjects?:  {
+  listProjects?: {
     __typename: "ModelProjectConnection",
-    items:  Array< {
+    items: Array<{
       __typename: "Project",
       id: string,
       name: string,
@@ -201,7 +201,7 @@ export type ListProjectsQuery = {
       createdAt: string,
       updatedAt: string,
       owner?: string | null,
-    } | null >,
+    } | null>,
     nextToken?: string | null,
   } | null,
 };
@@ -211,7 +211,7 @@ export type OnCreateProjectSubscriptionVariables = {
 };
 
 export type OnCreateProjectSubscription = {
-  onCreateProject?:  {
+  onCreateProject?: {
     __typename: "Project",
     id: string,
     name: string,
@@ -228,7 +228,7 @@ export type OnUpdateProjectSubscriptionVariables = {
 };
 
 export type OnUpdateProjectSubscription = {
-  onUpdateProject?:  {
+  onUpdateProject?: {
     __typename: "Project",
     id: string,
     name: string,
@@ -245,7 +245,7 @@ export type OnDeleteProjectSubscriptionVariables = {
 };
 
 export type OnDeleteProjectSubscription = {
-  onDeleteProject?:  {
+  onDeleteProject?: {
     __typename: "Project",
     id: string,
     name: string,
