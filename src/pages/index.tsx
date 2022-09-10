@@ -1,6 +1,8 @@
+import cx from 'classnames';
 import Head from "next/head";
-import Image from "next/image";
+import { Button } from 'react-bootstrap'
 import styles from "../../styles/Home.module.css";
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default function Home() {
   return (
@@ -14,70 +16,26 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to Arun's Site!</h1>
 
-        <p className={styles.description}>
+        <div className={styles.description}>
           A personal portfolio site built with Next.js, distributed by
           CloudFront, and hosted on AWS S3 to showcase my professional
           accomplishments - currently a work in progress!
-        </p>
+        </div>
 
-        <p className={styles.description}>
-          <a
-            href="https://github.com/arunkulkarni95/personal-site"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Source (GitHub)
-          </a>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className={cx('d-flex justify-content-around', styles.description)}>
+          <Button size='lg' className='me-5' href='/ArunKulkarni_Resume_9-3.pdf' variant="primary">My Resume</Button>
+          <Button
+            size='lg'
+            href='https://github.com/arunkulkarni95/personal-site'
+            target='blank'
+            rel='noopener noreferrer'
+            variant="primary">This Site's Source Code (GitHub)
+          </Button>
         </div>
       </main>
       <footer className={styles.footer}>
         <div>
-          COPYRIGHT &#169; {new Date().getFullYear()} Arun Kulkarni
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{" "}
-            <span className={styles.logo}>
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                width={72}
-                height={16}
-              />
-            </span>
-          </a>
+          Copyright &#169; {new Date().getFullYear()} Arun Kulkarni
         </div>
       </footer>
     </div>
