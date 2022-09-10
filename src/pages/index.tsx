@@ -23,13 +23,24 @@ export default function Home() {
         </div>
 
         <div className={cx('d-flex justify-content-around', styles.description)}>
-          <Button size='lg' className='me-5' href='/ArunKulkarni_Resume_9-3.pdf' variant="primary">My Resume</Button>
+          <Button
+            size='lg'
+            className='me-5'
+            href='/ArunKulkarni_Resume_9-3.pdf'
+            target='blank'
+            rel='noopener noreferrer'
+            variant="primary"
+          >
+            My Resume
+          </Button>
           <Button
             size='lg'
             href='https://github.com/arunkulkarni95/personal-site'
             target='blank'
             rel='noopener noreferrer'
-            variant="primary">This Site's Source Code (GitHub)
+            variant="primary"
+          >
+            This Site's Source Code (GitHub)
           </Button>
         </div>
       </main>
