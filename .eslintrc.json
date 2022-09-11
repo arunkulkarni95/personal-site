@@ -48,6 +48,7 @@
       "multi-or-nest",
       "consistent"
     ],
+    "eol-last": "error",
     "implicit-arrow-linebreak": "off",
     "import/no-named-as-default": "off",
     "import/order": [
