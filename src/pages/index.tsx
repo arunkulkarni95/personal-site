@@ -2,9 +2,11 @@ import cx from 'classnames';
 import Head from "next/head";
 import { Button } from 'react-bootstrap'
 import styles from "../../styles/Home.module.css";
+import Footer from '../components/Footer';
 import 'bootstrap/dist/css/bootstrap.css';
+import NavBar from '../components/NavBar';
 
-export default function Home() {
+export const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -12,7 +14,7 @@ export default function Home() {
         <meta name="description" content="Arun Kulkarni's personal website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <NavBar/>
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to Arun's Site!</h1>
 
@@ -44,11 +46,9 @@ export default function Home() {
           </Button>
         </div>
       </main>
-      <footer className={styles.footer}>
-        <div>
-          Copyright &#169; {new Date().getFullYear()} Arun Kulkarni
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
+
+export default Home;

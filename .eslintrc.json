@@ -60,7 +60,10 @@
         }
       }
     ],
-    "import/prefer-default-export": "off",
+    "indent": ["error", 2],
+    "import/prefer-default-export": "on",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
     "linebreak-style": "off",
     "max-len": [
       "error",
@@ -78,6 +81,9 @@
       "error",
       "below"
     ],
+    "react/function-component-definition": [true, {
+      "namedComponents": "arrow-function"
+    }],
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
