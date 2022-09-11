@@ -4,23 +4,23 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 
-export const AboutMe = () => 
+export const PageNotFound = () => 
   <>
     <NavBar />
     <div className={styles.container}>
       <Head>
-        <title>About Me | Arun Kulkarni</title>
-        <meta name="description" content="About Arun Kulkarni" />
+        <title>404 | Arun Kulkarni</title>
+        <meta name="description" content="404 Not Found" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.title}>About Me</h1>
+        <h1 className={styles.title}>404</h1>
         <div className={styles.description}>
-          Coming soon!
+          Page Not Found
         </div>
       </main>
       <Footer />
     </div>
   </>
-  
-export default AboutMe;
+
+export default PageNotFound;

@@ -6,7 +6,7 @@ import NavBar from "../components/NavBar";
 
 export const Contact = () => 
   <>
-    <NavBar/>
+    <NavBar />
     <div className={styles.container}>
       <Head>
         <title>Contact | Arun Kulkarni</title>

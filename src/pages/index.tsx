@@ -8,7 +8,7 @@ import NavBar from '../components/NavBar';
 
 export const Home = () => 
   <>
-    <NavBar/>
+    <NavBar />
     <div className={styles.container}>
       <Head>
         <title>Home | Arun Kulkarni</title>
