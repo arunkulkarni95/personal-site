@@ -61,7 +61,7 @@
       }
     ],
     "indent": ["error", 2],
-    "import/prefer-default-export": "on",
+    "import/prefer-default-export": "error",
     "import/no-unresolved": "off",
     "import/extensions": "off",
     "linebreak-style": "off",
@@ -81,7 +81,7 @@
       "error",
       "below"
     ],
-    "react/function-component-definition": [true, {
+    "react/function-component-definition": ["error", {
       "namedComponents": "arrow-function"
     }],
     "react/jsx-one-expression-per-line": "off",
