@@ -9,7 +9,7 @@ export const Contact = () =>
     <NavBar/>
     <div className={styles.container}>
       <Head>
-        <title>About Me | Arun Kulkarni</title>
+        <title>Contact | Arun Kulkarni</title>
         <meta name="description" content="About Arun Kulkarni" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
