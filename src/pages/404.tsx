@@ -8,7 +8,7 @@ export const PageNotFound = () =>
   <>
     <NavBar />
     <div className={styles.container}>
-      <Meta key='404' pageTitle='404' />
+      <Meta key='404' pageTitle='404' path='/404'/>
       <main className={styles.main}>
         <h1 className={styles.title}>404</h1>
         <div className={styles.description}>

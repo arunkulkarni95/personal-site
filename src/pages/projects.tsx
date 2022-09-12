@@ -8,7 +8,7 @@ export const Projects = () =>
   <>
     <NavBar />
     <div className={styles.container}>
-      <Meta key='projects' pageTitle='Projects' />
+      <Meta key='projects' pageTitle='Projects' path='/projects' />
       <main className={styles.main}>
         <h1 className={styles.title}>Projects</h1>
         <div className={styles.description}>

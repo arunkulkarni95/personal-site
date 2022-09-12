@@ -8,7 +8,7 @@ export const Contact = () =>
   <>
     <NavBar />
     <div className={styles.container}>
-      <Meta key='contact' pageTitle='Contact' />
+      <Meta key='contact' pageTitle='Contact' path='/contact' />
       <main className={styles.main}>
         <h1 className={styles.title}>Contact Me</h1>
         <div className={styles.description}>
