@@ -10,7 +10,7 @@ export const Meta = ({ pageTitle }: Props) => {
   return (
     <Head>
       <title>{fullPageTitle}</title>
-      <meta name="description" content="Arun Kulkarni's Projects" />
+      <meta name="description" content="Arun Kulkarni's professional portfolio site" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
   )
