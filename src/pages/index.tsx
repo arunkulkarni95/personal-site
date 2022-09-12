@@ -1,20 +1,16 @@
 import cx from 'classnames';
-import Head from "next/head";
 import { Button } from 'react-bootstrap'
 import styles from "../../styles/Home.module.css";
 import Footer from '../components/Footer';
 import 'bootstrap/dist/css/bootstrap.css';
+import Meta from '../components/Meta';
 import NavBar from '../components/NavBar';
 
 export const Home = () => 
   <>
     <NavBar />
     <div className={styles.container}>
-      <Head>
-        <title>Home | Arun Kulkarni</title>
-        <meta name="description" content="Arun Kulkarni's personal website" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Meta key='home' pageTitle='Home' />
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to Arun's Site!</h1>
         <div className={styles.description}>

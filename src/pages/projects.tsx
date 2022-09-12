@@ -1,18 +1,14 @@
-import Head from "next/head";
 import styles from "../../styles/Home.module.css";
 import 'bootstrap/dist/css/bootstrap.css';
 import Footer from "../components/Footer";
+import Meta from "../components/Meta";
 import NavBar from "../components/NavBar";
 
 export const Projects = () => 
   <>
     <NavBar />
     <div className={styles.container}>
-      <Head>
-        <title>Projects | Arun Kulkarni</title>
-        <meta name="description" content="Arun Kulkarni's Projects" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Meta key='projects' pageTitle='Projects' />
       <main className={styles.main}>
         <h1 className={styles.title}>Projects</h1>
         <div className={styles.description}>
