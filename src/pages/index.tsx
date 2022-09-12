@@ -13,7 +13,7 @@ export const Home = () =>
     <div className={styles.container}>
       <Meta key='home' pageTitle='Home' path='/' />
       <main className={cx('d-flex flex-column justify-content-center align-items-center', styles.homepageMain)}>
-        <Image src='/professional.png' width='200' height='200' />
+        <Image src='/professional.png' alt='Arun Kulkarni professional headshot' width='200' height='200' />
         <h1 className={styles.title}>Welcome to Arun's Site!</h1>
         <div className={styles.description}>
           A personal portfolio site built with Next.js, distributed by
