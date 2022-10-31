@@ -24,7 +24,7 @@ export const Home = () =>
           <Button 
             className='d-flex me-2 mb-4'
             size='lg'
-            href='/ArunKulkarni_Resume_9-3.pdf'
+            href='/ArunKulkarni_Resume.pdf'
             target='blank'
             rel='noopener noreferrer'
             variant="primary"
